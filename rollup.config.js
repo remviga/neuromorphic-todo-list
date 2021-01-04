@@ -26,7 +26,7 @@ export default {
       // a separate file - better for performance
       preprocess: [postcss({ plugins: [require("autoprefixer")] }), scss()],
       css: css => {
-        css.write("public/build/bundle.css");
+        css.write("bundle.css");
       }
     }),
 
